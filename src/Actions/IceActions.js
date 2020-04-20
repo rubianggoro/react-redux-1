@@ -1,14 +1,14 @@
-export const INCREMENT = "INCREMENT";
-export const DECREMENT = "DECREMENT";
+export const QUANTITY_ADD = "QUANTITY_ADD";
+export const QUANTITY_MIN = "QUANTITY_MIN";
 
 export const addIce = () => {
   return {
-    type: INCREMENT,
+    type: QUANTITY_ADD,
   };
 };
 
 export const minIce = () => {
   return {
-    type: DECREMENT,
+    type: QUANTITY_MIN,
   };
 };

@@ -4,10 +4,10 @@ import { addCakes, minCakes } from "../Actions/CakesActions";
 import { withRouter } from "react-router-dom";
 
 const Cakes = (props) => {
-  console.log("props", props);
+  // console.log("props", props);
   return (
     <div>
-      <h1>Page Cakes</h1>
+      <h1>Page CAKES</h1>
       <h3>total cakes : {props.cakes}</h3>
       <button
         onClick={() => {
@@ -30,9 +30,10 @@ const Cakes = (props) => {
   );
 };
 
-const mapStateToProps = ({ cakes }) => {
+const mapStateToProps = (props) => {
+  // console.log("props", props);
   return {
-    cakes: cakes,
+    cakes: props.CounterCakes.cakes,
   };
 };
 
